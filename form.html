@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+       <title>Sedona</title>
+       <meta charset="utf-8">
+	   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    </head>
+    <body class="page-wrap">
+        <header class="page-header">
+				<div class="page-header__logo">
+					<img class="" src="" alt="Sedona">
+				</div>
+				<nav class="main-nav">
+					<ul class="main-nav__list">
+						<li class="main-nav__item"><a href="">Карта штата</a></li>
+						<li class="main-nav__item"><a href="">Информация</a></li>
+						<li class="main-nav__item"><a href="">Фото и видео</a></li>
+						<li class="main-nav__item"><a href="">Гостиницы</a></li>
+					</ul>
+				</nav>
+		</header>
+		<main class="page-content">
+			<div>
+				<img src="" alt="">
+			</div>
+			<section class="review">
+				<h1>Оставьте свой отзыв</h1>
+				<p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+				<form class="form-review">
+					<fieldset class="form-name">
+						<legend>Представьтесь, пожалуйста:</legend>
+						<div class="form-group">
+							<label for="secondname">Фамилия:*</label>
+							<input type="text" value="Иванов"  id="secondname" required>
+						 </div>
+						 <div class="form-group">
+							<label for="firstname">Имя:*</label>
+							<input type="text" value="Петр"  id="firstname" required>
+						</div>
+						<div class="form-group">
+							<label for="thirdname">Отчество:</label>
+							<input type="text" value="Александрович"  id="thirdname">
+						</div>
+					</fieldset>
+					<fieldset class="form-impress">
+						<legend>Ваше общее впечатление:</legend>
+						<input type="radio" name="impress" value="plus" checked>Скорее положительное<Br>
+						<input type="radio" name="impress" value="minus">Скорее отрицательное<Br>
+					</fieldset>
+					<fieldset class="form-date">
+						<legend>Даты вашей поездки:</legend>
+						<div class="form-group">
+							<label for="date_in">Дата приезда:*</label>
+							<input type="date" id="date_in" required>
+						</div>
+						<div class="form-group">
+							<label for="duration">Длительность пребывания:*</label>
+							<input type="range">
+						</div>
+						<div class="form-group">
+							<label for="date_out">Дата отъезда:*</label>
+							<input type="date" id="date_out" required>
+						</div>
+					</fieldset>
+					<fieldset class="form-count">
+						<legend>Кол-во путешественников:</legend>
+						<div class="form-group">
+							<label for="count">Кол-во путешественников::*</label>
+							<input type="range" id="count" min="1" value="2">
+						</div>
+						<table class="guest-details">
+							<tbody>
+								<tr>
+									<td>№</td>
+									<td><label for="secondname">Фамилия:*</label></td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td><input type="text" value="Иванов"  id="secondname" required></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td><label for="firstname">Имя:*</label></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td><input type="text" value="Петр"  id="firstname" required></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td><label for="thirdname">Отчество:</label></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td><input type="text" value="Александрович"  id="thirdname"></td>
+								</tr>
+								<tr>
+									<td>№</td>
+									<td><label for="secondname">Фамилия:*</label></td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td><input type="text" value="Иванов"  id="secondname" required></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td><label for="firstname">Имя:*</label></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td><input type="text" value="Петр"  id="firstname" required></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td><label for="thirdname">Отчество:</label></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td><input type="text" value="Александрович"  id="thirdname"></td>
+								</tr>
+								
+							</tbody>
+						</table>
+					</fieldset>
+					<fieldset class="form-showplace">
+						<legend>Посещенные достопримечательности:</legend>
+						<div class="form-group">
+							<label><input type="checkbox" checked>Мост дьявола</label>
+							<label><input type="checkbox">Слайд парк</label>
+							<label><input type="checkbox" checked>Гора-Колокол</label>
+							<label><input type="checkbox" checked>Красные скалы</label>
+						</div>
+					</fieldset>
+					<fieldset class="form-foto">
+						<legend>ЗАГРУЗИТЕ ФОТОГРАФИИ:</legend>
+						<input type="file" name="image">
+					</fieldset>
+					<div class="">
+						<input type="submit" value="Отправить отзыв" name="send" id="send">
+						<div class="success">
+							<div>
+								<h2>Ваш отзыв отправлен!</h2>
+								<p>Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+								<a href="" title="сlose">Закрыть окно</a>
+							</div>
+						</div>
+						<div class="failure">
+							<div>
+								<h2>ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
+								<p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+								<a href="" title="ok">OK</a>
+							</div>
+						</div>
+					</div>
+				</form>
+			<section>
+		 </main>
+		<footer class="page-footer">
+			<p>#visitSEDONA</p>
+				<ul class="social">
+					<li><a href="" target="_blank" title="Twitter"></a></li>
+					<li><a href="" target="_blank" title="Facebook"></a>/li>
+					<li><a href="" target="_blank" title="Youtube"></a>/li>
+				</ul>
+			<p>Разработано</p>        
+		</footer>
+    </body>
+</html>
