@@ -20,135 +20,137 @@
 				</nav>
 		</header>
 		<main class="page-content">
-			<div>
+			<div class="intro">
 				<img src="" alt="">
 			</div>
 			<section class="review">
-				<h1>Оставьте свой отзыв</h1>
-				<p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+				<h1 class="review__title">Оставьте свой отзыв</h1>
+				<p class="review__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
 				<form class="form-review">
-					<fieldset class="form-name">
-						<legend>Представьтесь, пожалуйста:</legend>
-						<div class="form-group">
-							<label for="secondname">Фамилия:*</label>
-							<input type="text" value="Иванов"  id="secondname" required>
+					<fieldset class="form-group">
+						<legend class="form-group__title">Представьтесь, пожалуйста:</legend>
+						<div class="form-group--name">
+							<label class="form-group__label" for="secondname">Фамилия:*</label>
+							<input class="form-group__field" type="text" value="Иванов"  id="secondname" required>
 						 </div>
-						 <div class="form-group">
-							<label for="firstname">Имя:*</label>
-							<input type="text" value="Петр"  id="firstname" required>
+						 <div class="form-group--name">
+							<label class="form-group__label" for="firstname">Имя:*</label>
+							<input class="form-group__field"type="text" value="Петр"  id="firstname" required>
 						</div>
-						<div class="form-group">
-							<label for="thirdname">Отчество:</label>
-							<input type="text" value="Александрович"  id="thirdname">
-						</div>
-					</fieldset>
-					<fieldset class="form-impress">
-						<legend>Ваше общее впечатление:</legend>
-						<input type="radio" name="impress" value="plus" checked>Скорее положительное<Br>
-						<input type="radio" name="impress" value="minus">Скорее отрицательное<Br>
-					</fieldset>
-					<fieldset class="form-date">
-						<legend>Даты вашей поездки:</legend>
-						<div class="form-group">
-							<label for="date_in">Дата приезда:*</label>
-							<input type="date" id="date_in" required>
-						</div>
-						<div class="form-group">
-							<label for="duration">Длительность пребывания:*</label>
-							<input type="range">
-						</div>
-						<div class="form-group">
-							<label for="date_out">Дата отъезда:*</label>
-							<input type="date" id="date_out" required>
+						<div class="form-group--name">
+							<label class="form-group__label" for="thirdname">Отчество:</label>
+							<input class="form-group__field" type="text" value="Александрович"  id="thirdname">
 						</div>
 					</fieldset>
-					<fieldset class="form-count">
-						<legend>Кол-во путешественников:</legend>
-						<div class="form-group">
-							<label for="count">Кол-во путешественников::*</label>
-							<input type="range" id="count" min="1" value="2">
+					<fieldset class="form-group">
+						<legend class="form-group__title">Ваше общее впечатление:</legend>
+						<div class="form-group--impress">
+							<input class="form-group__label" type="radio" name="impress" value="plus" checked>Скорее положительное<Br>
+							<input class="form-group__field" type="radio" name="impress" value="minus">Скорее отрицательное<Br>
 						</div>
-						<table class="guest-details">
+					</fieldset>
+					<fieldset class="form-group">
+						<legend class="form-group__title">Даты вашей поездки:</legend>
+						<div class="form-group--date">
+							<label class="form-group__label" for="date_in">Дата приезда:*</label>
+							<input class="form-group__field" type="date" id="date_in" required>
+						</div>
+						<div class="form-group--date">
+							<label class="form-group__label" for="duration">Длительность пребывания:*</label>
+							<input class="form-group__field" type="range">
+						</div>
+						<div class="form-group--date">
+							<label class="form-group__label" for="date_out">Дата отъезда:*</label>
+							<input class="form-group__field" type="date" id="date_out" required>
+						</div>
+					</fieldset>
+					<fieldset class="form-group">
+						<legend class="form-group__title">Кол-во путешественников:</legend>
+						<div class="form-group--count">
+							<label class="form-group__label" for="count">Кол-во путешественников::*</label>
+							<input class="form-group__field" type="range" id="count" min="1" value="2">
+						</div>
+						<table class="form-group__quest">
 							<tbody>
 								<tr>
 									<td>№</td>
-									<td><label for="secondname">Фамилия:*</label></td>
+									<td><label class="form-group__label" for="secondname">Фамилия:*</label></td>
 								</tr>
 								<tr>
 									<td>1</td>
-									<td><input type="text" value="Иванов"  id="secondname" required></td>
+									<td><input class="form-group__field" type="text" value="Иванов"  id="secondname" required></td>
 								</tr>
 								<tr>
 									<td></td>
-									<td><label for="firstname">Имя:*</label></td>
+									<td><label class="form-group__label" for="firstname">Имя:*</label></td>
 								</tr>
 								<tr>
 									<td></td>
-									<td><input type="text" value="Петр"  id="firstname" required></td>
+									<td><input class="form-group__field" type="text" value="Петр"  id="firstname" required></td>
 								</tr>
 								<tr>
 									<td></td>
-									<td><label for="thirdname">Отчество:</label></td>
+									<td><label class="form-group__label" for="thirdname">Отчество:</label></td>
 								</tr>
 								<tr>
 									<td></td>
-									<td><input type="text" value="Александрович"  id="thirdname"></td>
+									<td><input class="form-group__field type="text" value="Александрович"  id="thirdname"></td>
 								</tr>
 								<tr>
 									<td>№</td>
-									<td><label for="secondname">Фамилия:*</label></td>
+									<td><label class="form-group__label" for="secondname">Фамилия:*</label></td>
 								</tr>
 								<tr>
 									<td>1</td>
-									<td><input type="text" value="Иванов"  id="secondname" required></td>
+									<td><input class="form-group__field" type="text" value="Иванов"  id="secondname" required></td>
 								</tr>
 								<tr>
 									<td></td>
-									<td><label for="firstname">Имя:*</label></td>
+									<td><label class="form-group__label" for="firstname">Имя:*</label></td>
 								</tr>
 								<tr>
 									<td></td>
-									<td><input type="text" value="Петр"  id="firstname" required></td>
+									<td><input class="form-group__field" type="text" value="Петр"  id="firstname" required></td>
 								</tr>
 								<tr>
 									<td></td>
-									<td><label for="thirdname">Отчество:</label></td>
+									<td><label class="form-group__label" for="thirdname">Отчество:</label></td>
 								</tr>
 								<tr>
 									<td></td>
-									<td><input type="text" value="Александрович"  id="thirdname"></td>
+									<td><input class="form-group__field" type="text" value="Александрович"  id="thirdname"></td>
 								</tr>
 								
 							</tbody>
 						</table>
 					</fieldset>
-					<fieldset class="form-showplace">
-						<legend>Посещенные достопримечательности:</legend>
-						<div class="form-group">
-							<label><input type="checkbox" checked>Мост дьявола</label>
-							<label><input type="checkbox">Слайд парк</label>
-							<label><input type="checkbox" checked>Гора-Колокол</label>
-							<label><input type="checkbox" checked>Красные скалы</label>
+					<fieldset class="form-group">
+						<legend class="form-group__title">Посещенные достопримечательности:</legend>
+						<div class="form-group--showplace">
+							<label class="form-group__label"><input class="form-showplace__field" type="checkbox" checked>Мост дьявола</label>
+							<label class="form-group__label"><input class="form-showplace__field" type="checkbox">Слайд парк</label>
+							<label class="form-group__label"><input class="form-showplace__field" type="checkbox" checked>Гора-Колокол</label>
+							<label class="form-group__label"><input class="form-showplace__field" type="checkbox" checked>Красные скалы</label>
 						</div>
 					</fieldset>
-					<fieldset class="form-foto">
-						<legend>ЗАГРУЗИТЕ ФОТОГРАФИИ:</legend>
-						<input type="file" name="image">
+					<fieldset class="form-group">
+						<legend class="form-group__title">ЗАГРУЗИТЕ ФОТОГРАФИИ:</legend>
+						<input class="form-group__field" type="file" name="image">
 					</fieldset>
-					<div class="">
+					<div class="review-submit">
 						<input type="submit" value="Отправить отзыв" name="send" id="send">
-						<div class="success">
-							<div>
-								<h2>Ваш отзыв отправлен!</h2>
-								<p>Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-								<a href="" title="сlose">Закрыть окно</a>
+						<div class="popup">
+							<div class="popup-content">
+								<h2 class="popup-content__title">Ваш отзыв отправлен!</h2>
+								<p class="popup-content__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+								<a class="popup-content__link" href="" title="сlose">Закрыть окно</a>
 							</div>
 						</div>
-						<div class="failure">
-							<div>
-								<h2>ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
-								<p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-								<a href="" title="ok">OK</a>
+						<div class="popup">
+							<div class="popup-content">
+								<h2 class="popup-content__title">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
+								<p class="popup-content__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+								<a class="popup-content__link" href="" title="ok">OK</a>
 							</div>
 						</div>
 					</div>
@@ -157,12 +159,15 @@
 		 </main>
 		<footer class="page-footer">
 			<p>#visitSEDONA</p>
-				<ul class="social">
-					<li><a href="" target="_blank" title="Twitter"></a></li>
-					<li><a href="" target="_blank" title="Facebook"></a>/li>
-					<li><a href="" target="_blank" title="Youtube"></a>/li>
+				<ul class="social-links">
+					<li class="social-links__item"><a class="social-links__tw" href="" target="_blank" title="Twitter"></a></li>
+					<li class="social-links__item"><a class="social-links__fb" href="" target="_blank" title="Facebook"></a></li>
+					<li class="social-links__item"><a class="social-links__yt" href="" target="_blank" title="Youtube"></a></li>
 				</ul>
-			<p>Разработано</p>        
+			<p>Разработано</p>
+			<a class="page-footer__logo-link" href="/">
+				<img class="page-footer__logo-img" src="" alt="HTML Academy">
+			</a>			
 		</footer>
     </body>
 </html>

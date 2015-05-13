@@ -20,48 +20,50 @@
 			</nav>
 		</header>
 		<main class="page-content">
-			<div>
+			<div class="intro">
 				<img src="" alt="">
 			</div>
 			<article class="blog">
-				<header>
-					<h1>БЛОГ Шерифа</h1>
-					<p>Седона удивительный город! Горы здесь красного цвета, а местный шериф ведет блог и общается на форумах.</p>
+				<header class="blog-header">
+					<h1 class="blog-header__title">БЛОГ Шерифа</h1>
+					<div class="blog-header__description">
+						Седона удивительный город! Горы здесь красного цвета, а местный шериф ведет блог и общается на форумах.
+					</div>
 				</header>
 				<article class="post">
 					<header class="post_header">
-					<div class="info-news">
-							<span>Позавчера</span>
-							<span>Происшествия</span>
+						<div class="post__info">
+							<span class="post__date">Позавчера</span>
+							<span class="post__category">Происшествия</span>
 						</div>
 						<h2 class="post__title">Внимание! сбежала моя домашняя анаконда</h2>
-						<p>Жители Седоны и гости города, будьте бдительны — Сбежала моя домашняя змея. Увидевшему срочно звонить 911 и бежать от нее подальше.</p>
+						<p class="post__description">Жители Седоны и гости города, будьте бдительны — Сбежала моя домашняя змея. Увидевшему срочно звонить 911 и бежать от нее подальше.</p>
 					</header>
-					<section>
-						<h2>Предыстория</h2>
-						<p>В далеком 85-ом я подобрал эту змею на трассе. Ее переехал грузовик и она валялась на обочине. Мне стало жаль ее и я решил взять ее с собой. Кинул в багажник пикапа и подумал  тогда: «Если доедет до Седоны живой, так и быть, оставлю ее себе»</p>
+					<section class="post-content">
+						<h2 class="post-content__title">Предыстория</h2>
+						<p class="post-content__description">В далеком 85-ом я подобрал эту змею на трассе. Ее переехал грузовик и она валялась на обочине. Мне стало жаль ее и я решил взять ее с собой. Кинул в багажник пикапа и подумал  тогда: «Если доедет до Седоны живой, так и быть, оставлю ее себе»</p>
 					</section>
-						<h2>Пропажа<h2>
-						<p>Неделю назад я вернулся из канзаса и не нашел Анаконду дома. Обошел все 200 гектаров своего участка, но ее нигде нет. Решил сообщить в полицию, но вовремя вспомнил, что я и есть полиция, поэтому отправился на поиски сам. особые приметы змеи:</p>
-						<ul>
-							<li>Длина: 5 метров</li>
-							<li>Длина: 5 метров</li>
-							<li> Окраска: серовато-зелёная</li>
+						<h2 class="post-content__title">Пропажа<h2>
+						<p class="post-content__description">Неделю назад я вернулся из канзаса и не нашел Анаконду дома. Обошел все 200 гектаров своего участка, но ее нигде нет. Решил сообщить в полицию, но вовремя вспомнил, что я и есть полиция, поэтому отправился на поиски сам. особые приметы змеи:</p>
+						<ul class="post-content__list">
+							<li class="post-content__item">Длина: 5 метров</li>
+							<li class="post-content__item">Длина: 5 метров</li>
+							<li class="post-content__item"> Окраска: серовато-зелёная</li>
 						</ul>
-						<p>Если вы увидите эту змею, сразу <a href="">звоните 911</a> и бегите со всех ног от нее!</p>
+						<p class="post-content__notice">Если вы увидите эту змею, сразу <a href="">звоните 911</a> и бегите со всех ног от нее!</p>
 					<section>
-						<h2>Предостережение</h3>
-						<p>Не пытайтесь убить змею, если увидите! Помните, что она тоже живое существо, хоть и выглядит не очень приятно. вот цитата, которая мне очень нравится:</p>
-						<blockquote>Самый свирепый из зверей — теперь мы знаем — это человек, он убивает даже если не голоден.</blockquote>
-						<cite>Адриано Челентано</cite>
+						<h2 class="post-content__title">Предостережение</h3>
+						<p class="post-content__description">Не пытайтесь убить змею, если увидите! Помните, что она тоже живое существо, хоть и выглядит не очень приятно. вот цитата, которая мне очень нравится:</p>
+						<blockquote class="post-content__quote">Самый свирепый из зверей — теперь мы знаем — это человек, он убивает даже если не голоден.</blockquote>
+						<cite class="post-content__cite">Адриано Челентано</cite>
 					</section>
-					<nav>
-						<ul>
-							<li><a href="">Пред.</a>
-							<li><a href="">След.</a>
+					<nav class="blog-nav">
+						<ul class="blog-nav__list">
+							<li class="blog-nav__list-item"><a href="">Пред.</a>
+							<li class="blog-nav__list-item"><a href="">След.</a>
 					  </ul>
 					</nav>
-					<div>
+					<div class="blog-back">
 						<a href="">Назад к списку</a>
 					<div>
 				</article>
@@ -69,12 +71,15 @@
 		</main>
 		<footer class="page-footer">
 			<p>#visitSEDONA</p>
-				<ul class="social">
-					<li><a href="" target="_blank" title="Twitter"></a></li>
-					<li><a href="" target="_blank" title="Facebook"></a>/li>
-					<li><a href="" target="_blank" title="Youtube"></a>/li>
+				<ul class="social-links">
+					<li class="social-links__item"><a class="social-links__tw" href="" target="_blank" title="Twitter"></a></li>
+					<li class="social-links__item"><a class="social-links__fb" href="" target="_blank" title="Facebook"></a></li>
+					<li class="social-links__item"><a class="social-links__yt" href="" target="_blank" title="Youtube"></a></li>
 				</ul>
-			<p>Разработано</p>        
+			<p>Разработано</p>
+			<a class="page-footer__logo-link" href="/">
+				<img class="page-footer__logo-img" src="" alt="HTML Academy">
+			</a>			
 		</footer>
     </body>
 </html>
