@@ -4,6 +4,8 @@
        <title>Sedona</title>
        <meta charset="utf-8">
 	   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	   <link rel="stylesheet" href="css/style.css">
+	   <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
     </head>
     <body class="page-wrap">
         <header class="page-header">
@@ -12,10 +14,10 @@
 			</div>
 			<nav class="main-nav">
 				<ul class="main-nav__list">
-					<li class="main-nav__item"><a href="">Карта штата</a></li>
-					<li class="main-nav__item"><a href="">Информация</a></li>
-					<li class="main-nav__item"><a href="">Фото и видео</a></li>
-					<li class="main-nav__item"><a href="">Гостиницы</a></li>
+					<li class="main-nav__list-item"><a class="main-nav-list-item__link" href="">Карта штата</a></li>
+					<li class="main-nav__list-item"><a class="main-nav-list-item__link" href="">Информация</a></li>
+					<li class="main-nav__list-item"><a class="main-nav-list-item__link" href="">Фото и видео</a></li>
+					<li class="main-nav__list-item"><a class="main-nav-list-item__link" href="">Гостиницы</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -24,60 +26,71 @@
 				<img src="" alt="">
 			</div>
 			<article class="main-article">
-				<header class="main-article__header">
-					<h1 class="main-article__title">СЕДОНА — небольшой  городок в АРИЗОНЕ,  заслуживающий большего!</h1>
-					<p class="main-article__description">Рассмотрим 5 причин, по которым седона круче чем гранд каньон</p>
-				</header>
-				<section class="benefit">
-					<h2 class="benefit__title">НАСТОЯЩИЙ ГОРОДОК</h2>  
-					<div class="benefit__number">— №1  —  </div>
-					<div class="benefit__description">
-						СЕДОНА НЕ АТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
-					</div>
+				<div class="container-top">
+					<header class="main-article__header">
+						<h1 class="main-article__title">СЕДОНА — небольшой  городок в АРИЗОНЕ,  заслуживающий большего!</h1>
+						<p class="main-article__description">Рассмотрим 5 причин, по которым седона круче чем гранд каньон</p>
+					</header>
+				</div>
+				<div class="container-section">
+					<section class="benefit">
+						<h2 class="benefit__title">НАСТОЯЩИЙ ГОРОДОК</h2>  
+						<div class="benefit__number">— №1  —  </div>
+						<div class="benefit__description">
+							СЕДОНА НЕ АТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
+						</div>
+				</div>
+				<div class="container-feature">
 					<ul class="benefit__list">
-						<li class="benefit__list-item"><p>ЖИЛЬЕ</p><p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p></li>
-						<li class="benefit__list-item"><p>СУВЕНИРЫ</p><p>Не только китайского, но и местного производства!</p></li>
-						<li class="benefit__list-item"><p>ЕДА</p><p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p></li>
+						<li class="benefit__list-item"><h2>ЖИЛЬЕ</h2><p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p></li>
+						<li class="benefit__list-item"><h2>СУВЕНИРЫ</h2><p>Не только китайского, но и местного производства!</p></li>
+						<li class="benefit__list-item"><h2>ЕДА</h2><p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p></li>
 						<li class="benefit__list-item"></li>
 					</ul>
+				</div>
 				</section>
-				<section class="benefit">
-					<h2 class="benefit__title">Там есть мост дьявола<h2>
-					<div class="benefit__number">
-						— №2  —  
-					</div>
-					<div class="benefit__description">
-						Да, по нему можно пройти! Если конечно вы осмелитесь
-					</div>
-				</section>
-				<section class="benefit">
-					<h3 class="benefit__title">Небольшая площадь</h3>
-					<div class="benefit__number">
-						— №3  —  
-					</div>
-					<div class="benefit__description">Все достопримечательности находятся очень близко</p>
-				</section>
-				<section class="benefit">
-					<h3 class="benefit__title">Красивая дорога</h3>
-					<div class="benefit__number">
-						— №4  —  
-					</div>
-					<div class="benefit__description">
-						Ехать в Седону из Лас-Вегаса совсем не скучно!
-					</div>
-				</section>
-				<section class="benefit">
-					<h3 class="benefit__title">Мало туристов</h3>
-					<div class="benefit__number">
-						— №5  —  
-					</div>
-					<div class="benefit__description">
-						Большинство едет в Гранд Каньон и толпится там
-					</div>
-				</section>
+				<div class="container-section">
+					<section class="benefit">
+						<h2 class="benefit__title">Там есть мост дьявола</h2>
+						<div class="benefit__number">
+							— №2  —  
+						</div>
+						<div class="benefit__description">
+							Да, по нему можно пройти! Если конечно вы осмелитесь
+						</div>
+					</section>
+				</div>
+				<div class="container-section container-section--grey">
+					<section class="benefit benefit--border-bottom">
+						<h2 class="benefit__title">Небольшая площадь</h3>
+						<div class="benefit__number">
+							— №3  —  
+						</div>
+						<div class="benefit__description">Все достопримечательности находятся очень близко
+						</div>
+					</section>
+					<section class="benefit benefit--border-bottom">
+						<h2 class="benefit__title">Красивая дорога</h2>
+						<div class="benefit__number">
+							— №4  —  
+						</div>
+						<div class="benefit__description">
+							Ехать в Седону из Лас-Вегаса совсем не скучно!
+						</div>
+					</section>
+					<section class="benefit">
+						<h2 class="benefit__title">Мало туристов</h2>
+						<div class="benefit__number">
+							— №5  —  
+						</div>
+						<div class="benefit__description">
+							Большинство едет в Гранд Каньон и толпится там
+						</div>
+					</section>
+				</div>
 			</article>
 			<div class="find-hotel">
-				<h4 class="find-hotel__title">Заинтересовались?</h4>
+				<h3 class="find-hotel__title">Заинтересовались?</h4>
 				<p class="find-hotel__description">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 				<a  class="find-hotel__link" href="">Найти гостиницу</a>
 			</div>
@@ -85,16 +98,31 @@
 			</div>
 		</main>
 		<footer class="page-footer">
-			<p>#visitSEDONA</p>
-				<ul class="social-links">
-					<li class="social-links__item"><a class="social-links__tw" href="" target="_blank" title="Twitter"></a></li>
-					<li class="social-links__item"><a class="social-links__fb" href="" target="_blank" title="Facebook"></a></li>
-					<li class="social-links__item"><a class="social-links__yt" href="" target="_blank" title="Youtube"></a></li>
-				</ul>
-			<p>Разработано</p>
-			<a class="page-footer__logo-link" href="/">
-				<img class="page-footer__logo-img" src="" alt="HTML Academy">
-			</a>			
+			<div class="page-footer__tag">
+				#visitSEDONA
+			</div>
+			<ul class="social-links">
+				<li class="social-links__item">	
+					<a class="social-links__tw" href="" target="_blank"  title="Twitter">
+						<img src="" alt="Twitter">
+					</a>
+				</li>
+				<li class="social-links__item">
+					<a class="social-links__fb" href="" target="_blank"  title="Facebook">
+						<img src="" alt="Facebook">
+					</a>
+				</li>
+				<li class="social-links__item">
+					<a class="social-links__yt" href="" target="_blank" title="Youtube">
+						<img src="" alt="Youtube">
+					</a>
+				</li>
+			</ul>
+			<div class="page-footer__right">Разработано
+				<a class="page-footer-right__logo-link" href="/">
+					<img class="page-footer-right__logo-img" src="" alt="HTML Academy">
+				</a>
+			</div>
 		</footer>
     </body>
 </html>

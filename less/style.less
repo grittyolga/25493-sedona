@@ -1,30 +1,18 @@
-@color: #fff;
-@bg-color: #000;
-@wrap-width: 300px;
+/*content css*/
+@import "grid.less";
 
-html, body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
+/*variables*/
+@import "variables.less";
 
-body {
-  background-color: @bg-color;
-  color: @color;
-}
 
-.page-header {
-  &__logo-wrap {
-    width: @wrap-width;
-    height: @wrap-width/2;
-    margin: @wrap-width/4 auto 0;
-    text-align: center;
-  }
+@import "grid.less";
+@import "main-article.less";
 
-  &__logo-link {
-    color: @color;
-    font-size: 28px;
-    font-weight: bold;
-  }
-}
+@import "type.less";
+
+@import "page-header.less";
+@import "page-content.less";
+
+@import "find-hotel.less";
+
+@import "page-footer.less";
