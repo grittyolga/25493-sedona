@@ -1,0 +1,41 @@
+
+.blog-pagination {
+  
+  border-top: 2px solid @border-color;
+  padding: 46px 20px 0 20px;
+  border-bottom: 2px solid @border-color;
+  
+  &__list {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+  &__list-item {
+    background-color: @blue;
+    width: 58px;
+    height: 58px;
+    margin-bottom: 15px;
+  }
+  &__list-item-link {
+    text-decoration: none;
+    color: @text-color-white;
+    display: block;
+    width: 58px;
+    height: 58px;
+    line-height: 58px;
+    
+     &:active {
+        background-color: @blog-pagination;
+        color: @text-color;
+      }
+     &:hover {
+      background-color: @blog-pagination;
+      color: @text-color;
+    }
+  }
+}
+

@@ -4,6 +4,8 @@
        <title>Sedona</title>
        <meta charset="utf-8">
 	   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <link rel="stylesheet" href="css/style.css">
+	   <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic,latin" rel="stylesheet">
     </head>
     <body class="page-wrap">
         <header class="page-header">
@@ -12,10 +14,10 @@
 			</div>
 			<nav class="main-nav">
 				<ul class="main-nav__list">
-					<li class="main-nav__item"><a href="">Карта штата</a></li>
-					<li class="main-nav__item"><a href="">Информация</a></li>
-					<li class="main-nav__item"><a href="">Фото и видео</a></li>
-					<li class="main-nav__item"><a href="">Гостиницы</a></li>
+					<li class="main-nav__list-item"><a class="main-nav__list-item-link" href="">Карта штата</a></li>
+					<li class="main-nav__list-item"><a class="main-nav__list-item-link" href="">Информация</a></li>
+					<li class="main-nav__list-item"><a class="main-nav__list-item-link" href="">Фото и видео</a></li>
+					<li class="main-nav__list-item"><a class="main-nav__list-item-link" href="">Гостиницы</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -41,7 +43,7 @@
 					</div>
 				</section>
 				<section class="post">
-					<h2 class="post__title">Принят антитабачный закон штата<h2>
+					<h2 class="post__title">Принят антитабачный закон штата</h2>
 					<div class="post__description">
 						Уважаемые туристы, пожалуйста не забывайте, что курение сигарет и сигар в общественных местах города Седона категорически запрещено.
 					</div>
@@ -80,7 +82,7 @@
 						<span class="post__category">Еда</span>
 					</div>
 				</section>
-				<section class="post">
+				<section class="post post--no-border">
 					<h3 class="post__title">Прогноз погоды на ближайшие выходные</h3>
 					<div class="post__description">
 						Синоптики обещают, что будет ясно, безветрено и около 90 по фаренгейту. Как в пустыне! Проверим их слова уже через пару дней.
@@ -90,29 +92,44 @@
 						<span class="post__category">Погода</span>
 					</div>
 				</section>
-				<nav class="blog-pagination">
+				
+			</article>
+      <nav class="blog-pagination">
 					<ul class="blog-pagination__list">
-						<li><a class="blog-pagination__list-item" href="">1</a>
-						<li><a class="blog-pagination__list-item" href="">2</a>
-						<li><a class="blog-pagination__list-item" href="">3</a>
-						<li><a class="blog-pagination__list-item" href="">4</a>
-						<li><a class="blog-pagination__list-item" href="">5</a>
+						<li class="blog-pagination__list-item"><a class="blog-pagination__list-item-link" href="">1</a>
+						<li class="blog-pagination__list-item"><a class="blog-pagination__list-item-link" href="">2</a>
+						<li class="blog-pagination__list-item"><a class="blog-pagination__list-item-link" href="">3</a>
+						<li class="blog-pagination__list-item"><a class="blog-pagination__list-item-link" href="">4</a>
+						<li class="blog-pagination__list-item"><a class="blog-pagination__list-item-link" href="">5</a>
 				  </ul>
 				</nav>
-			</article>
 		</main>
 		<footer class="page-footer">
-			<p>#visitSEDONA</p>
-				<ul class="social-links">
-					<li class="social-links__item"><a class="social-links__tw" href="" target="_blank" title="Twitter"></a></li>
-					<li class="social-links__item"><a class="social-links__fb" href="" target="_blank" title="Facebook"></a></li>
-					<li class="social-links__item"><a class="social-links__yt" href="" target="_blank" title="Youtube"></a></li>
-				</ul>
-			<p>Разработано</p>
-			<a class="page-footer__logo-link" href="/">
-				<img class="page-footer__logo-img" src="" alt="HTML Academy">
-			</a>			
+			<div class="page-footer__tag">
+				#visitSEDONA
+			</div>
+			<ul class="social-links">
+				<li class="social-links__item">	
+					<a class="social-links__tw" href="" target="_blank"  title="Twitter">
+						<img src="" alt="Twitter">
+					</a>
+				</li>
+				<li class="social-links__item">
+					<a class="social-links__fb" href="" target="_blank"  title="Facebook">
+						<img src="" alt="Facebook">
+					</a>
+				</li>
+				<li class="social-links__item">
+					<a class="social-links__yt" href="" target="_blank" title="Youtube">
+						<img src="" alt="Youtube">
+					</a>
+				</li>
+			</ul>
+			<div class="page-footer__right">Разработано
+				<a class="page-footer-right__logo-link" href="/">
+					<img class="page-footer-right__logo-img" src="" alt="HTML Academy">
+				</a>
+			</div>
 		</footer>
-       
     </body>
 </html>
